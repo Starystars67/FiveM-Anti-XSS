@@ -26,7 +26,7 @@ AddEventHandler("playerConnecting", OnPlayerConnecting)
 
 -- logging here, you can add your own ban system or what not
 local function logPlayer(name, ids)
-	local string = "Logged User -> "..name..", IDs: "ids.."."
+	local string = "Logged User -> "..name..", IDs: "..ids.."."
 	local file = io.open('resources/'.. GetCurrentResourceName() .. '/Logs/log.txt', "a")
 	print(string)
 	io.output(file)
